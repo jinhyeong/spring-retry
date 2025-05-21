@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.retry:spring-retry'
+	implementation 'org.springframework.boot:spring-boot-starter-aop' // Needed for @Retryable annotations
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
